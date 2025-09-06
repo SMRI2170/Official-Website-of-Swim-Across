@@ -1,81 +1,162 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>利用規約 - Swim Across</title>
+    <title>Terms of Service - Swim Across</title>
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
     <style>
-        body { font-family: 'Noto Sans JP', sans-serif; }
-        .text-primary { color: #3b82f6; } /* Changed color to blue for a swimming theme */
-        .bg-primary { background-color: #3b82f6; }
-        .prose h2 { margin-top: 2em; margin-bottom: 1em; font-size: 1.5rem; font-weight: 700; border-bottom: 2px solid #E5E7EB; padding-bottom: 0.5em; }
-        .prose p, .prose ol { margin-bottom: 1em; line-height: 1.7; }
-        .prose ol { list-style-type: decimal; padding-left: 1.5em; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC; /* bg-slate-50 */
+            color: #0F172A; /* bg-slate-900 */
+        }
+        .bg-primary { background-color: #0284C7; } /* sky-600 */
+        .text-primary { color: #0284C7; }
+        .bg-primary-gradient {
+            background-image: linear-gradient(to right, #0EA5E9, #0284C7); /* sky-500 to sky-600 */
+        }
+        .prose h2 {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 800; /* font-extrabold */
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #E2E8F0; /* border-slate-200 */
+        }
+        .prose h3 {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 700; /* font-bold */
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .prose p, .prose li {
+            color: #334155; /* text-slate-700 */
+            line-height: 1.75;
+        }
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="antialiased">
+
+    <!-- Header -->
     <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.22 8.22a.75.75 0 011.06 0l1.47 1.47a.75.75 0 01-1.06 1.06L6.22 9.28a.75.75 0 010-1.06zM12.22 8.22a.75.75 0 011.06 0l1.47 1.47a.75.75 0 01-1.06 1.06l-1.47-1.47a.75.75 0 010-1.06zM10 14a.75.75 0 01-.75-.75v-1.5a.75.75 0 011.5 0v1.5A.75.75 0 0110 14z" clip-rule="evenodd" />
+                  <path d="M10 3.5a1.5 1.5 0 011.06.44l4.244 4.243a1.5 1.5 0 010 2.12l-4.244 4.243a1.5 1.5 0 01-2.12-2.122L11.586 10 8.94 7.354a1.5 1.5 0 011.06-2.56zm-4.242 5.293a1.5 1.5 0 010-2.122L10 2.43a1.5 1.5 0 012.12 0l4.244 4.243a1.5 1.5 0 010 2.12l-4.244 4.243a1.5 1.5 0 01-2.12 0L5.758 8.793z" />
                 </svg>
                 <h1 class="text-2xl font-bold text-primary">Swim Across</h1>
             </a>
-            <a href="index.html#download" class="bg-primary text-white px-5 py-2 rounded-full font-bold hover:opacity-90 transition shadow-md">
-                アプリを入手
+            <a href="index.html#download" class="hidden md:block bg-primary-gradient text-white px-5 py-2 rounded-full font-bold hover:opacity-90 transition shadow-md">
+                Get the App
             </a>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-16">
-        <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-md">
-            <article class="prose lg:prose-lg max-w-none">
-                <h1 class="text-4xl font-black text-center mb-8">利用規約</h1>
-                <p>この利用規約（以下、「本規約」といいます。）は、「Swim Across」（以下、「本アプリ」といいます。）の利用条件を定めるものです。ユーザーの皆様（以下、「ユーザー」といいます。）には、本規約に従って本アプリをご利用いただきます。</p>
+    <!-- Main Content -->
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-6 prose max-w-4xl">
+            <h2>Terms of Service</h2>
 
-                <h2>第1条（適用）</h2>
-                <p>本規約は、ユーザーと本アプリの開発者との間の本アプリの利用に関わる一切の関係に適用されるものとします。</p>
+            <h3>Article 1 (Application)</h3>
+            <p>These Terms of Service (hereinafter referred to as "these Terms") shall apply to all relationships concerning the use of this application (hereinafter referred to as "the App").</p>
+            
+            <h3>Article 2 (User Registration)</h3>
+            <p>Those who wish to use the App shall apply for user registration by the method specified by the Company after agreeing to these Terms. The Company may not approve user registration if the applicant falls under any of the following items:</p>
+            <ul>
+                <li>If there are false statements, errors, or omissions in the registration details.</li>
+                <li>If the applicant has previously been subject to suspension of use due to a violation of these Terms.</li>
+                <li>In any other cases where the Company deems user registration to be inappropriate.</li>
+            </ul>
 
-                <h2>第2条（利用許諾）</h2>
-                <p>開発者は、本規約に同意したユーザーに対し、本アプリを無償で利用する非独占的な権利を許諾します。</p>
-                
-                <h2>第3条（禁止事項）</h2>
-                <p>ユーザーは、本アプリの利用にあたり、以下の行為をしてはなりません。</p>
-                <ol>
-                    <li>法令または公序良俗に違反する行為</li>
-                    <li>本アプリの運営を妨害するおそれのある行為</li>
-                    <li>リバースエンジニアリング、逆コンパイル、または逆アセンブルする行為</li>
-                    <li>第三者になりすます行為</li>
-                    <li>その他、開発者が不適切と判断する行為</li>
-                </ol>
+            <h3>Article 3 (Prohibited Matters)</h3>
+            <p>Users shall not engage in the following acts when using the App:</p>
+            <ul>
+                <li>Acts that violate laws or public order and morals.</li>
+                <li>Acts related to criminal activity.</li>
+                <li>Acts that infringe on the copyrights, trademark rights, or other intellectual property rights of the App, other users, or third parties.</li>
+                <li>Acts that interfere with the operation of the App, or acts that may do so.</li>
+                <li>Acts of registering or transmitting false information.</li>
+                <li>Acts that cause disadvantage, damage, or discomfort to other users or third parties.</li>
+                <li>Any other acts that the Company deems inappropriate.</li>
+            </ul>
 
-                <h2>第4条（自己責任の原則）</h2>
-                <p>ユーザーは、本アプリを利用して入力したすべてのデータについて、一切の責任を負うものとします。入力されたデータが第三者の権利を侵害した場合、ユーザーは自身の責任と費用において解決するものとし、開発者は一切の責任を負いません。</p>
+            <h3>Article 4 (Disclaimer)</h3>
+            <p>The Company shall not be liable for any damage incurred by the user arising from the App. The content of the App may be changed, interrupted, or terminated without notice to the user. The Company shall not be responsible for any troubles that arise between users or between a user and a third party in connection with the use of the App.</p>
 
-                <h2>第5条（免責事項）</h2>
-                <p>開発者は、本アプリの利用によってユーザーに生じたいかなる損害についても、一切の責任を負わないものとします。本アプリの動作保証、およびデータの完全性、正確性、有用性について、いかなる保証も行いません。</p>
-                
-                <h2>第6条（利用規約の変更）</h2>
-                <p>開発者は、必要と判断した場合には、ユーザーに通知することなくいつでも本規約を変更することができるものとします。</p>
+            <h3>Article 5 (Changes and Suspension of Service Content)</h3>
+            <p>The Company may change, interrupt, or terminate all or part of the App without prior notice to the user. The Company shall not be liable for any damage incurred by the user or a third party as a result of the preceding paragraph.</p>
 
-                <h2>第7条（準拠法・裁判管轄）</h2>
-                <p>本規約の解釈にあたっては、日本法を準拠法とします。本アプリに関して紛争が生じた場合には、開発者の所在地を管轄する裁判所を専属的合意管轄とします。</p>
+            <h3>Article 6 (Suspension of Use and Deregistration)</h3>
+            <p>The Company may suspend use or deregister a user without prior notice if the user falls under any of the following:</p>
+            <ul>
+                <li>If the user violates these Terms.</li>
+                <li>If the user registers false information.</li>
+                <li>In any other cases where the Company deems the use of the App to be inappropriate.</li>
+            </ul>
+            <p>The Company shall not be liable for any damage caused by the suspension of use or deregistration.</p>
 
-                <p class="text-right mt-8">以上</p>
-            </article>
+            <h3>Article 7 (Copyright)</h3>
+            <p>All copyrights, trademark rights, and other intellectual property rights related to the App belong to the Company or a legitimate rights holder. Users may not reproduce, reprint, sell, publish, etc., the content of the App without the permission of the Company.</p>
+
+            <h3>Article 8 (Handling of Personal Information)</h3>
+            <p>The Company shall handle users' personal information appropriately in accordance with a separately established privacy policy.</p>
+
+            <h3>Article 9 (Changes to the Terms of Service)</h3>
+            <p>The Company may change these Terms without notifying the user. The revised terms shall take effect from the time they are posted on the App.</p>
+
+            <h3>Article 10 (Governing Law and Jurisdiction)</h3>
+            <p>The interpretation of these Terms shall be governed by the laws of Japan. In the event of a dispute concerning the App, the Tokyo District Court shall be the exclusive jurisdictional court of the first instance.</p>
         </div>
     </main>
 
-    <footer class="bg-gray-800 text-gray-300 mt-16">
-        <div class="container mx-auto px-6 py-10 text-center text-sm text-gray-500">
-            <p>&copy; <span id="year"></span> Swim Across. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center sm:text-left">
+                <div>
+                    <h3 class="font-bold text-lg text-white">Swim Across</h3>
+                    <p class="mt-2 text-slate-400 text-sm">Your Ultimate Swim Companion.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-white">Navigation</h3>
+                    <ul class="mt-2 space-y-2 text-sm">
+                        <li><a href="index.html#features" class="text-slate-400 hover:text-white">Features</a></li>
+                        <li><a href="index.html#gallery" class="text-slate-400 hover:text-white">Design</a></li>
+                        <li><a href="index.html#download" class="text-slate-400 hover:text-white">Download</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-white">Legal</h3>
+                    <ul class="mt-2 space-y-2 text-sm">
+                        <li><a href="privacy.html" class="text-slate-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-slate-400 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-slate-700 pt-6 text-center text-sm text-slate-500">
+                <p>&copy; <span id="year"></span> Swim Across. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
+
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+
 </body>
 </html>
