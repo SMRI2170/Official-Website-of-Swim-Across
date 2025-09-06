@@ -1,81 +1,153 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー - Swim Across</title>
+    <title>Privacy Policy - Swim Across</title>
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
     <style>
-        body { font-family: 'Noto Sans JP', sans-serif; }
-        .text-primary { color: #3b82f6; } /* Changed color to blue for a swimming theme */
-        .bg-primary { background-color: #3b82f6; }
-        .prose h2 { margin-top: 2em; margin-bottom: 1em; font-size: 1.5rem; font-weight: 700; border-bottom: 2px solid #E5E7EB; padding-bottom: 0.5em; }
-        .prose h3 { margin-top: 1.5em; margin-bottom: 0.8em; font-size: 1.25rem; font-weight: 600; }
-        .prose p, .prose ul { margin-bottom: 1em; line-height: 1.7; }
-        .prose ul { list-style-type: disc; padding-left: 1.5em; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC; /* bg-slate-50 */
+            color: #0F172A; /* bg-slate-900 */
+        }
+        .bg-primary { background-color: #0284C7; } /* sky-600 */
+        .text-primary { color: #0284C7; }
+        .bg-primary-gradient {
+            background-image: linear-gradient(to right, #0EA5E9, #0284C7); /* sky-500 to sky-600 */
+        }
+        .prose h2 {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 800; /* font-extrabold */
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #E2E8F0; /* border-slate-200 */
+        }
+        .prose h3 {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 700; /* font-bold */
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .prose p, .prose li {
+            color: #334155; /* text-slate-700 */
+            line-height: 1.75;
+        }
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="antialiased">
+
+    <!-- Header -->
     <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.22 8.22a.75.75 0 011.06 0l1.47 1.47a.75.75 0 01-1.06 1.06L6.22 9.28a.75.75 0 010-1.06zM12.22 8.22a.75.75 0 011.06 0l1.47 1.47a.75.75 0 01-1.06 1.06l-1.47-1.47a.75.75 0 010-1.06zM10 14a.75.75 0 01-.75-.75v-1.5a.75.75 0 011.5 0v1.5A.75.75 0 0110 14z" clip-rule="evenodd" />
+                  <path d="M10 3.5a1.5 1.5 0 011.06.44l4.244 4.243a1.5 1.5 0 010 2.12l-4.244 4.243a1.5 1.5 0 01-2.12-2.122L11.586 10 8.94 7.354a1.5 1.5 0 011.06-2.56zm-4.242 5.293a1.5 1.5 0 010-2.122L10 2.43a1.5 1.5 0 012.12 0l4.244 4.243a1.5 1.5 0 010 2.12l-4.244 4.243a1.5 1.5 0 01-2.12 0L5.758 8.793z" />
                 </svg>
                 <h1 class="text-2xl font-bold text-primary">Swim Across</h1>
             </a>
-            <a href="index.html#download" class="bg-primary text-white px-5 py-2 rounded-full font-bold hover:opacity-90 transition shadow-md">
-                アプリを入手
+            <a href="index.html#download" class="hidden md:block bg-primary-gradient text-white px-5 py-2 rounded-full font-bold hover:opacity-90 transition shadow-md">
+                Get the App
             </a>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-16">
-        <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-md">
-            <article class="prose lg:prose-lg max-w-none">
-                <h1 class="text-4xl font-black text-center mb-8">プライバシーポリシー</h1>
-                <p>制定日: 2025年9月6日</p>
-                <p>「Swim Across」（以下、「本アプリ」といいます）は、ユーザーの皆様のプライバシーを尊重し、個人情報の保護に最大限の注意を払っています。本プライバシーポリシーは、本アプリがどのように情報を扱うかについて説明するものです。</p>
+    <!-- Main Content -->
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-6 prose max-w-4xl">
+            <h2>Privacy Policy</h2>
+            <p>This application (hereinafter referred to as "the App") recognizes the importance of protecting users' personal information and complies with the Act on the Protection of Personal Information (hereinafter referred to as the "Personal Information Protection Act"). We strive for the appropriate handling and protection of personal information in accordance with the following privacy policy (hereinafter referred to as "this Privacy Policy").</p>
 
-                <h2>1. 取得する情報</h2>
-                <p>本アプリは、ユーザーの皆様から個人情報を取得することはありません。すべてのデータは、お使いのデバイス内にのみ保存され、開発者が外部からアクセスすることはありません。</p>
-                
-                <h3>ユーザーが入力する情報</h3>
-                <p>以下の情報は、ユーザーが任意で入力するものであり、すべてデバイス内にのみ保存されます。</p>
-                <ul>
-                    <li>トレーニング記録（距離、時間、スタイルなど）</li>
-                    <li>目標設定</li>
-                    <li>大会やイベントのスケジュール</li>
-                    <li>メモや日記の内容</li>
-                </ul>
+            <h3>Article 1 (Definition of Personal Information)</h3>
+            <p>In this Privacy Policy, personal information is defined as personal information under Article 2, Paragraph 1 of the Personal Information Protection Act. This refers to information about a living individual that can identify a specific individual by name, date of birth, or other descriptions contained in such information (including information that can be easily collated with other information, thereby identifying a specific individual), or information containing an individual identification code.</p>
 
-                <h2>2. 情報の利用目的</h2>
-                <p>ユーザーが入力したデータは、本アプリの機能を提供するためにのみ、デバイス内で利用されます。これらの情報がアプリの改善、広告、またはその他の目的で外部に送信されることはありません。</p>
+            <h3>Article 2 (Purpose of Use of Personal Information)</h3>
+            <p>The App will use users' personal information for the following purposes:</p>
+            <ul>
+                <li>To provide the services of the App.</li>
+                <li>To provide guidance and respond to inquiries regarding the App.</li>
+                <li>To respond to acts that violate our terms, policies, etc. (hereinafter referred to as "Terms, etc.") regarding the App.</li>
+                <li>To notify users of changes to the Terms, etc. regarding the App.</li>
+                <li>To analyze and improve the usage of the App.</li>
+                <li>To create statistical data related to the use of the App.</li>
+                <li>For other tasks necessary for the operation of the App.</li>
+            </ul>
 
-                <h2>3. 情報の第三者への提供</h2>
-                <p>本アプリは、ユーザーのデータを外部の第三者に提供または共有することはありません。</p>
+            <h3>Article 3 (Proper Acquisition of Personal Information)</h3>
+            <p>The App will acquire users' personal information by appropriate means. When acquiring personal information from users, the App will specify the purpose of use and acquire personal information within the necessary scope.</p>
 
-                <h2>4. データのバックアップと復元</h2>
-                <p>本アプリのデータはお使いのデバイス内に保存されます。機種変更やアプリのアンインストールを行うと、データは失われます。データのバックアップについては、OSが提供するバックアップ機能をご利用ください。</p>
+            <h3>Article 4 (Provision of Personal Information to Third Parties)</h3>
+            <p>The App will not provide personal information to third parties without the user's consent. However, personal information may be provided to third parties without the user's consent in the following cases:</p>
+            <ul>
+                <li>When required by law.</li>
+                <li>When it is necessary for the protection of a person's life, body, or property, and it is difficult to obtain the person's consent.</li>
+                <li>When it is particularly necessary for improving public health or promoting the sound upbringing of children, and it is difficult to obtain the person's consent.</li>
+                <li>When it is necessary to cooperate with a national agency, a local government, or a person entrusted by them in executing the affairs prescribed by laws and regulations, and obtaining the person's consent is likely to impede the execution of such affairs.</li>
+            </ul>
 
-                <h2>5. お問い合わせ</h2>
-                <p>本プライバシーポリシーに関するご質問は、下記までご連絡ください。</p>
-                <p>連絡先: [あなたの連絡先メールアドレス]</p>
+            <h3>Article 5 (Management of Personal Information)</h3>
+            <p>The App will strive to keep users' personal information accurate and up-to-date. The App will take necessary and appropriate security control measures to prevent unauthorized access, loss, destruction, alteration, and leakage of users' personal information.</p>
 
-                <h2>6. プライバシーポリシーの変更</h2>
-                <p>本プライバシーポリシーは、法令の変更やアプリのアップデートに伴い、事前の予告なく変更されることがあります。変更後のプライバシーポリシーは、本ページに掲載された時点から効力を生じるものとします。</p>
-            </article>
+            <h3>Article 6 (Disclosure, Correction, Suspension of Use, etc. of Personal Information)</h3>
+            <p>Users may request the App to disclose, correct, add, delete, suspend the use of, erase, and stop the provision to third parties of their personal information (hereinafter referred to as "Disclosure, etc."). The App will respond appropriately to requests for Disclosure, etc. from users in accordance with the law.</p>
+
+            <h3>Article 7 (Changes to the Privacy Policy)</h3>
+            <p>The App may change this Privacy Policy due to amendments to laws and regulations, etc. If this Privacy Policy is changed, users will be notified by posting the revised content within the App.</p>
+
+            <h3>Article 8 (Contact Information)</h3>
+            <p>For inquiries regarding the handling of personal information in this App, please contact the following:<br>
+            📧 <strong>devbyryosuke2025@gmail.com</strong></p>
         </div>
     </main>
 
-    <footer class="bg-gray-800 text-gray-300 mt-16">
-        <div class="container mx-auto px-6 py-10 text-center text-sm text-gray-500">
-            <p>&copy; <span id="year"></span> Swim Across. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center sm:text-left">
+                <div>
+                    <h3 class="font-bold text-lg text-white">Swim Across</h3>
+                    <p class="mt-2 text-slate-400 text-sm">Your Ultimate Swim Companion.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-white">Navigation</h3>
+                    <ul class="mt-2 space-y-2 text-sm">
+                        <li><a href="index.html#features" class="text-slate-400 hover:text-white">Features</a></li>
+                        <li><a href="index.html#gallery" class="text-slate-400 hover:text-white">Design</a></li>
+                        <li><a href="index.html#download" class="text-slate-400 hover:text-white">Download</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-white">Legal</h3>
+                    <ul class="mt-2 space-y-2 text-sm">
+                        <li><a href="privacy.html" class="text-slate-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-slate-400 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-slate-700 pt-6 text-center text-sm text-slate-500">
+                <p>&copy; <span id="year"></span> Swim Across. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
+
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+
 </body>
 </html>
