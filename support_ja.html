@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート | Swim Across</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Noto Sans JP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+            background-color: #F8FAFC; /* bg-slate-50 */
+            color: #0F172A; /* bg-slate-900 */
+        }
+        .bg-primary { background-color: #0284C7; } /* sky-600 */
+        .text-primary { color: #0284C7; }
+        .bg-primary-gradient {
+            background-image: linear-gradient(to right, #0EA5E9, #0284C7); /* sky-500 to sky-600 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 3.5a1.5 1.5 0 011.06.44l4.244 4.243a1.5 1.5 0 010 2.12l-4.244 4.243a1.5 1.5 0 01-2.12-2.122L11.586 10 8.94 7.354a1.5 1.5 0 011.06-2.56zm-4.242 5.293a1.5 1.5 0 010-2.122L10 2.43a1.5 1.5 0 012.12 0l4.244 4.243a1.5 1.5 0 010 2.12l-4.244 4.243a1.5 1.5 0 01-2.12 0L5.758 8.793z" />
+                </svg>
+                <h1 class="text-2xl font-bold text-primary">Swim Across</h1>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#features" class="text-gray-600 hover:text-primary transition">機能</a>
+                <a href="index.html#gallery" class="text-gray-600 hover:text-primary transition">デザイン</a>
+                <a href="support_en.html" class="text-gray-600 hover:text-primary transition">English</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center">サポート</h2>
+                <p class="text-lg text-gray-600 mt-4 text-center">よくあるご質問 (FAQ)</p>
+
+                <div class="mt-12 space-y-10">
+                    <!-- FAQ Section: General -->
+                    <div>
+                        <h3 class="text-2xl font-bold border-b-2 border-primary pb-2">全般</h3>
+                        <div class="mt-6 space-y-6">
+                            <div>
+                                <h4 class="font-bold text-lg">Q1: 「Swimming Trip」はどのようなアプリですか？</h4>
+                                <p class="mt-2 text-gray-700">A1: 「Swimming Trip」は、日々の水泳トレーニングを記録し、あなたの泳いだ総距離を地図上の旅として視覚化するアプリです。トレーニングメニューの作成、目標タイムの設定、カレンダーでの記録管理など、モチベーションを維持するための機能が揃っています。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Section: Map -->
+                    <div>
+                        <h3 class="text-2xl font-bold border-b-2 border-primary pb-2">地図機能について</h3>
+                        <div class="mt-6 space-y-6">
+                            <div>
+                                <h4 class="font-bold text-lg">Q2: 地図のスタート地点とゴール地点はどのように設定するのですか？</h4>
+                                <p class="mt-2 text-gray-700">A2: 「地図」画面で、設定したい期間（今週・今月・今年）を選びます。その後、地図上を長押しすると、最初にスタート地点、次にもう一度長押しするとゴール地点を設定できます。設定した区間の距離が自動的にその期間の目標距離になります。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Q3: 地図上の現在地は何を表していますか？</h4>
+                                <p class="mt-2 text-gray-700">A3: あなたが「カレンダー」で記録した遊泳距離に応じて、スタート地点からゴール地点に向かって進んだ現在地を表しています。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section: Logging -->
+                     <div>
+                        <h3 class="text-2xl font-bold border-b-2 border-primary pb-2">記録とカレンダーについて</h3>
+                        <div class="mt-6 space-y-6">
+                            <div>
+                                <h4 class="font-bold text-lg">Q4: トレーニングはどのように記録しますか？</h4>
+                                <p class="mt-2 text-gray-700">A4: 「カレンダー」画面右下の「記録を追加」ボタンから、日付、トレーニングメニュー、泳いだ距離(km)を入力して保存します。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Q5: 過去の記録を修正・削除したいです。</h4>
+                                <p class="mt-2 text-gray-700">A5: 「カレンダー」画面で該当日付をタップすると記録が表示されます。記録をタップすると編集画面が、長押しすると削除の確認画面が表示されます。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section: Menus -->
+                    <div>
+                        <h3 class="text-2xl font-bold border-b-2 border-primary pb-2">トレーニングメニューについて</h3>
+                        <div class="mt-6 space-y-6">
+                            <div>
+                                <h4 class="font-bold text-lg">Q6: オリジナルのトレーニングメニューはどうやって作れますか？</h4>
+                                <p class="mt-2 text-gray-700">A6: 「メニュー」画面右下の「＋」ボタンから作成できます。ウォームアップ、メイン、ダウンなどのセクションを追加し、各セクションに泳法、距離、本数、サークルタイムなどを設定して、自分だけのメニューを組み立てましょう。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Q7: 作成したメニューはどこで使いますか？</h4>
+                                <p class="mt-2 text-gray-700">A7: 「カレンダー」でトレーニングを記録する際に、作成したメニューを選択できます。メニューを選ぶと、そのメニューの合計距離が自動で入力されるので便利です。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section: Goals -->
+                    <div>
+                        <h3 class="text-2xl font-bold border-b-2 border-primary pb-2">目標設定について</h3>
+                        <div class="mt-6 space-y-6">
+                            <div>
+                                <h4 class="font-bold text-lg">Q8: 目標タイムは設定できますか？</h4>
+                                <p class="mt-2 text-gray-700">A8: はい、「カレンダー」画面の「統計」タブ内にある「目標タイム」から設定できます。泳法（クロール、平泳ぎなど）、距離、目標タイムを登録しておくと、いつでも確認できます。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section: Data -->
+                    <div>
+                        <h3 class="text-2xl font-bold border-b-2 border-primary pb-2">データについて</h3>
+                        <div class="mt-6 space-y-6">
+                             <div>
+                                <h4 class="font-bold text-lg">Q9: データはどこに保存されますか？機種変更時に引き継ぎはできますか？</h4>
+                                <p class="mt-2 text-gray-700">A9: トレーニングの記録は、お使いのスマートフォン本体に保存されます。現在、異なるスマートフォンへのデータ引き継ぎ機能（クラウド同期など）には対応しておりません。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- FAQ Section: Other -->
+                    <div>
+                        <h3 class="text-2xl font-bold border-b-2 border-primary pb-2">その他</h3>
+                        <div class="mt-6 space-y-6">
+                            <div>
+                                <h4 class="font-bold text-lg">Q10: 対応している言語を教えてください。</h4>
+                                <p class="mt-2 text-gray-700">A10: 日本語、英語、スペイン語、フランス語、ドイツ語、イタリア語、ポルトガル語、ロシア語、中国語、韓国語、ヒンディー語、アラビア語、ベンガル語、ウルドゥー語、インドネシア語、オランダ語、スウェーデン語、ノルウェー語、デンマーク語、タイ語、トルコ語に対応しています。アプリ内の設定から言語を切り替えることができます。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="text-center pt-10">
+                         <h3 class="text-2xl font-bold">お問い合わせ</h3>
+                         <p class="mt-4 text-gray-700">問題が解決しない場合や、その他ご不明な点がございましたら、以下のメールアドレスまでご連絡ください。</p>
+                         <a href="mailto:devbyryosuke@gmail.com" class="mt-4 inline-block text-primary font-bold hover:underline">devbyryosuke@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300">
+        <div class="container mx-auto px-6 py-10">
+             <div class="mt-10 border-t border-slate-700 pt-6 text-center text-sm text-slate-500">
+                <p>&copy; <span id="year"></span> Swim Across. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+     <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
