@@ -292,7 +292,7 @@
                     x: () => -(track.scrollWidth - window.innerWidth),
                     ease: "none",
                     scrollTrigger: {
-                        trigger: "#features",
+                        trigger: "#features", // ← 正しいIDに修正
                         pin: true,
                         scrub: 1,
                         end: () => "+=" + (track.scrollWidth - window.innerWidth),
