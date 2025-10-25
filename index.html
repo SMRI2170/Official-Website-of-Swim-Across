@@ -46,7 +46,7 @@
         }
 
         /* --- Horizontal Scroll Section --- */
-        #horizontal-scroll-section {
+        #features { /* IDをCSSでも合わせておくと分かりやすいです */
             background-color: #111827; /* bg-gray-900 */
             color: #f9fafb; /* bg-gray-50 */
             overflow: hidden;
@@ -229,7 +229,7 @@
     <footer class="bg-gray-800 text-gray-300">
         <div class="container mx-auto px-6 py-10">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center sm:text-left">
-                <div class="md:col-span-2">
+                <div class="md-col-span-2">
                     <h3 class="font-bold text-lg text-white">Swim Across</h3>
                     <p class="mt-2 text-gray-400 text-sm">あなたの泳ぎを、もっと先へ。</p>
                 </div>
@@ -272,7 +272,7 @@
                         scrollTrigger: {
                             trigger: el,
                             start: 'top 90%',
-                            toggleActions: 'play none none none',
+                            once: true // ★★★★★★★★★★★★★ 修正点 ★★★★★★★★★★★★★
                         }
                     }
                 );
@@ -292,7 +292,7 @@
                     x: () => -(track.scrollWidth - window.innerWidth),
                     ease: "none",
                     scrollTrigger: {
-                        trigger: "#features", // ← 正しいIDに修正
+                        trigger: "#features",
                         pin: true,
                         scrub: 1,
                         end: () => "+=" + (track.scrollWidth - window.innerWidth),
